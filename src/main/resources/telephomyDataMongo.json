@@ -1,0 +1,194 @@
+[
+        {
+            "id": 1,
+            "name": "John Doe",
+            "birthYear": "1990-01-01",
+            "phoneNumber": "+1234567890",
+            "secondaryPhoneNumber": "+9876543210",
+            "creationDate": "2022-02-05"
+        },
+        {
+            "id": 2,
+            "name": "Jane Smith",
+            "birthYear": "1985-01-01",
+            "phoneNumber": "+11122334455",
+            "secondaryPhoneNumber": "+9988776655",
+            "creationDate": "2022-02-05"
+        },
+        {
+            "id": 3,
+            "name": "Bob Johnson",
+            "birthYear": "1995-01-01",
+            "phoneNumber": "+9876543210",
+            "secondaryPhoneNumber": "+1234567890",
+            "creationDate": "2022-02-05"
+        },
+        {
+            "id": 4,
+            "name": "Alice Brown",
+            "birthYear": "1993-01-01",
+            "phoneNumber": "+15556667777",
+            "secondaryPhoneNumber": "+1122334455",
+            "creationDate": "2022-02-05"
+        },
+        {
+            "id": 6,
+            "name": "Eva Black",
+            "birthYear": "1992-01-01",
+            "phoneNumber": "+1122334455",
+            "secondaryPhoneNumber": "+15556667777",
+            "creationDate": "2022-02-05"
+        },
+        {
+            "id": 7,
+            "name": "David Green",
+            "birthYear": "1988-01-01",
+            "phoneNumber": "+9988776655",
+            "secondaryPhoneNumber": "+9876543210",
+            "creationDate": "2022-02-05"
+        },
+        {
+            "id": 8,
+            "name": "Grace Taylor",
+            "birthYear": "1996-01-01",
+            "phoneNumber": "+3344556677",
+            "secondaryPhoneNumber": "+9988776655",
+            "creationDate": "2022-02-05"
+        },
+        {
+            "id": 9,
+            "name": "Frank Miller",
+            "birthYear": "1983-01-01",
+            "phoneNumber": "+9988776655",
+            "secondaryPhoneNumber": "+3344556677",
+            "creationDate": "2022-02-05"
+        },
+        {
+            "id": 10,
+            "name": "Helen Davis",
+            "birthYear": "1991-01-01",
+            "phoneNumber": "+4455667788",
+            "secondaryPhoneNumber": "+2233445566",
+            "creationDate": "2022-02-05"
+        },
+        {
+            "id": 11,
+            "name": "James Wilson",
+            "birthYear": "1982-01-01",
+            "phoneNumber": "+2233445566",
+            "secondaryPhoneNumber": "+4455667788",
+            "creationDate": "2022-02-05"
+        },
+        {
+            "id": 12,
+            "name": "Karen Turner",
+            "birthYear": "1994-01-01",
+            "phoneNumber": "+5566778899",
+            "secondaryPhoneNumber": "+1122334455",
+            "creationDate": "2022-02-05"
+        },
+        {
+            "id": 13,
+            "name": "Mark Thompson",
+            "birthYear": "1986-01-01",
+            "phoneNumber": "+1122334455",
+            "secondaryPhoneNumber": "+5566778899",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 14,
+            "name": "Nancy Brown",
+            "birthYear": "1997-01-01",
+            "phoneNumber": "+6677889900",
+            "secondaryPhoneNumber": "+3344556677",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 15,
+            "name": "Oliver King",
+            "birthYear": "1987-01-01",
+            "phoneNumber": "+3344556677",
+            "secondaryPhoneNumber": "+6677889900",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 16,
+            "name": "Pamela Turner",
+            "birthYear": "1998-01-01",
+            "phoneNumber": "+4455667788",
+            "secondaryPhoneNumber": "+2233445566",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 17,
+            "name": "Quincy Adams",
+            "birthYear": "1989-01-01",
+            "phoneNumber": "+2233445566",
+            "secondaryPhoneNumber": "+4455667788",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 18,
+            "name": "Rachel Miller",
+            "birthYear": "1999-01-01",
+            "phoneNumber": "+5566778899",
+            "secondaryPhoneNumber": "+1122334455",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 19,
+            "name": "Samuel White",
+            "birthYear": "1984-01-01",
+            "phoneNumber": "+1122334455",
+            "secondaryPhoneNumber": "+5566778899",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 20,
+            "name": "Tina Davis",
+            "birthYear": "2000-01-01",
+            "phoneNumber": "+6677889900",
+            "secondaryPhoneNumber": "+3344556677",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 21,
+            "name": "Ulysses Green",
+            "birthYear": "1992-01-01",
+            "phoneNumber": "+3344556677",
+            "secondaryPhoneNumber": "+6677889900",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 22,
+            "name": "Victoria Turner",
+            "birthYear": "1981-01-01",
+            "phoneNumber": "+4455667788",
+            "secondaryPhoneNumber": "+2233445566",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 23,
+            "name": "William Thompson",
+            "birthYear": "1993-01-01",
+            "phoneNumber": "+2233445566",
+            "secondaryPhoneNumber": "+4455667788",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 24,
+            "name": "Xena Wilson",
+            "birthYear": "1985-01-01",
+            "phoneNumber": "+5566778899",
+            "secondaryPhoneNumber": "+1122334455",
+            "creationDate": "2022-02-06"
+        },
+        {
+            "id": 25,
+            "name": "Yasmine Adams",
+            "birthYear": "1994-01-01",
+            "phoneNumber": "+1122334455",
+            "secondaryPhoneNumber": "+5566778899",
+            "creationDate": "2022-02-06"
+        }
+  ]
