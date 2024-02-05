@@ -32,11 +32,10 @@ spring.jpa.hibernate.ddl-auto=update
 
 ````
 далее для `mongodb`:
+
 ```properties
-mongodb.uri=mongodb://@localhost:27017/имя_базы_данных
-
-ИЛИ
-
+#mongodb.uri=mongodb://@localhost:27017/имя_базы_данных
+#ИЛИ
 mongodb.uri=mongodb://ваш_логин:ваш_пароль@localhost:27017/имя_базы_данных
 ````
 # Контроллеры
