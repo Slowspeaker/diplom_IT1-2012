@@ -54,9 +54,10 @@ public class TelephonyController {
         return ResponseEntity.ok().build();
     }
 
-    @DeleteMapping("/phone")
-    public ResponseEntity<Void> deleteByPhoneNumber(@RequestParam String phoneNumber) {
+    @DeleteMapping("/phone/{phoneNumber}")
+    public ResponseEntity<Void> deleteByPhoneNumber(@PathVariable String phoneNumber) {
         telephonyService.deleteByPhoneNumber(phoneNumber);
         return ResponseEntity.ok().build();
     }
+
 }
