@@ -6,8 +6,10 @@
 (1) [Как скачать](#how-to-download)
 - 1.1  [Процесс запуска](#launch-process)
 
-(2) [Необходимые настройки](#needable-settings) 
+(2) [2](#needable-settings) 
 - [Требования](#requiremnts) 
+### [Конфигурация](#configuration) 
+
 
 ## [1](#how-to-download) Как скачать 
 
@@ -33,7 +35,7 @@
   - **URL**: `mongodb.uri=mongodb://@localhost:27017/telephony` 
 - **Gradle**: Проект использует Gradle версии 6.8. Пожалуйста, убедитесь, что он установлен на вашей системе.
 
-### [3](#configuration) Конфигурация
+### [Конфигурация](#configuration) Конфигурация
 
 Перед запуском проекта убедитесь, что файл `application.properties` (или `application.yml` для YAML формата) в вашем проекте содержит правильные настройки для подключения к базе данных PostgreSQL.
 
