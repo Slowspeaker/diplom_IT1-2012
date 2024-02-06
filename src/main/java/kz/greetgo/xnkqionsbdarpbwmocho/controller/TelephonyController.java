@@ -28,7 +28,6 @@ public class TelephonyController {
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    // Изменил путь для уникальности и избежания конфликта
     @GetMapping("/phone/{phoneNumber}")
     public ResponseEntity<Telephony> getTelephonyByPhoneNumber(@PathVariable String phoneNumber) {
         return telephonyService.findByPhoneNumber(phoneNumber)
