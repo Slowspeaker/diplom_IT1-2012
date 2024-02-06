@@ -2,6 +2,13 @@
 
 Тестовое задание для Junior Backend Developer (Java)
 
+# Оглавление
+(1) [Как скачать](#how-to-download)
+- 1.1  [Процесс запуска](#launch-process)
+
+(2) [Необходимые настройки](#needable-settings) 
+- [Требования](#requiremnts) 
+
 ## [1](#how-to-download) Как скачать 
 
 Чтобы скачать проект, вам нужно открыть командную строку. И прописать команду git clone https://github.com/Slowspeaker/xnkqionsbdarpbwmocho.
