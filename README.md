@@ -47,7 +47,7 @@ spring.jpa.hibernate.ddl-auto=update
 #ИЛИ
 mongodb.uri=mongodb://ваш_логин:ваш_пароль@localhost:27017/имя_базы_данных
 ````
-# [3.1](#configuration-controllers) Контроллеры
+### [3.1](#configuration-controllers) Контроллеры
 
 
 TelephonyController - управляет телефонными номерами (postgreSQL).
@@ -80,7 +80,7 @@ TelephonyMongoController - управляет телефонными номер�
 
 >DELETE /api/v1/from-mongo/byPhoneNumber - удаляет телефонию по номеру телефона
 
-# [3.2](#configuration-resources) Ресурсы
+### [3.2](#configuration-resources) Ресурсы
 данные для бд сохранены в папке `src/main/resources` 
 для postgres -> telephonyData.sql
 mongo -> telephomyDataMongo.json 
@@ -88,6 +88,6 @@ mongo -> telephomyDataMongo.json
 
 
 
-# [4](#dont-work) Что НЕ работает
+## [4](#dont-work) Что НЕ работает
 
 В данный момент не работает удаление в postgres, по номеру телефона.
