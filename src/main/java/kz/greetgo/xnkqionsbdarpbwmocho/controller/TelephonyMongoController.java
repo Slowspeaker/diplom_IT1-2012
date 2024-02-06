@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/v1/telephony-mongo")
 public class TelephonyMongoController {
+
     @Autowired
     private TelephonyMongoService telephonyMongoService;
 
@@ -52,7 +53,6 @@ public class TelephonyMongoController {
         telephonyMongoService.deleteTelephonyMongo(id);
         return ResponseEntity.ok().build();
     }
-
 
     @DeleteMapping("/phone")
     public ResponseEntity<Void> deleteByPhoneNumber(@RequestParam String phoneNumber) {
