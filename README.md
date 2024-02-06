@@ -68,33 +68,34 @@ mongodb.uri=mongodb://ваш_логин:ваш_пароль@localhost:27017/им
 
 TelephonyController - управляет телефонными номерами (postgreSQL).
 
+http://localhost:8080
 
->POST /api/v1/from-postgres - создает запись телефонии.
+>POST /api/v1/telephony-postgres - создает запись телефонии.
 
->GET /api/v1/from-postgres/{id} - возвращает телефонию по ID.
+>GET api/v1/telephony-postgres/id/{id} - возвращает телефонию по ID.
 
->GET /api/v1/from-postgres/{phoneNumber} - возвращает телефонию по номеру телефона.
+>GET /api/v1/telephony-postgres/phone/{phoneNumber} - возвращает телефонию по номеру телефона.
 
->PUT /api/v1/from-postgres/{id} - обновляет телефонию по ID.
+>PUT /api/v1/telephony-postgres/{id} - обновляет телефонию по ID.
 
->DELETE /api/v1/from-postgres/{id} - удаляет телефонию по ID.
+>DELETE /api/v1/telephony-postgres/{id} - удаляет телефонию по ID.
 
->DELETE /api/v1/from-postgres/byPhoneNumber - удаляет телефонию по номеру телефона
+>DELETE /api/v1/telephony-postgres/phone/{phoneNumber} - удаляет телефонию по номеру телефона
 
 TelephonyMongoController - управляет телефонными номерами (mongoDB).
 
 
->POST /api/v1/from-mongo - создает запись телефонии.
+>POST /api/v1/telephony-mongo - создает запись телефонии.
 
->GET /api/v1/from-mongo/{id} - возвращает телефонию по ID.
+>GET /api/v1/telephony-mongo/id/{id} - возвращает телефонию по ID.
 
->GET /api/v1/from-mongo/{phoneNumber} - возвращает телефонию по номеру телефона.
+>GET /api/v1/telephony-mongo/phone/{phoneNumber} - возвращает телефонию по номеру телефона.
 
->PUT /api/v1/from-mongo/{id} - обновляет телефонию по ID.
+>PUT /api/v1/telephony-mongo/{id} - обновляет телефонию по ID.
 
->DELETE /api/v1/from-mongo/{id} - удаляет телефонию по ID.
+>DELETE /api/v1/telephony-mongo/{id} - удаляет телефонию по ID.
 
->DELETE /api/v1/from-mongo/byPhoneNumber - удаляет телефонию по номеру телефона
+>DELETE /api/v1/telephony-mongo/phone/{phoneNumber} - удаляет телефонию по номеру телефона
 
 ### Ресурсы
 данные для бд сохранены в папке `src/main/resources` 
