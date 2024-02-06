@@ -8,8 +8,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDate;
 
-@Setter
-@Getter
+
 @Document
 @Data
 public class TelephonyMongo {
@@ -21,8 +20,8 @@ public class TelephonyMongo {
     private String secondaryPhoneNumber;
     private LocalDate creationDate;
 
-    public TelephonyMongo(String id, String name, LocalDate birthYear, String phoneNumber, String secondaryPhoneNumber, LocalDate creationDate) {
-        this.id = id;
+    public TelephonyMongo( String name, LocalDate birthYear, String phoneNumber, String secondaryPhoneNumber, LocalDate creationDate) {
+
         this.name = name;
         this.birthYear = birthYear;
         this.phoneNumber = phoneNumber;

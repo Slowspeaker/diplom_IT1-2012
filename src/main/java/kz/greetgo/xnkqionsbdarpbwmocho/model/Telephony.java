@@ -10,8 +10,7 @@ import lombok.Setter;
 
 import java.time.LocalDate;
 
-@Setter
-@Getter
+
 @Entity
 @Data
 public class Telephony {
@@ -24,8 +23,7 @@ public class Telephony {
     private String secondaryPhoneNumber;
     private LocalDate creationDate;
 
-    public Telephony(Long id, String name, LocalDate birthYear, String phoneNumber, String secondaryPhoneNumber, LocalDate creationDate) {
-        this.id = id;
+    public Telephony(String name, LocalDate birthYear, String phoneNumber, String secondaryPhoneNumber, LocalDate creationDate) {
         this.name = name;
         this.birthYear = birthYear;
         this.phoneNumber = phoneNumber;

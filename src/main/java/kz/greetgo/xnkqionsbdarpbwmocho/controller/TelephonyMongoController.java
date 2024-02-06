@@ -8,37 +8,36 @@ import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
-
 @RestController
-@RequestMapping("/api/v1/from-mongo")
+@RequestMapping("/api/v1/telephony-mongo")
 public class TelephonyMongoController {
     @Autowired
     private TelephonyMongoService telephonyMongoService;
 
     @PostMapping
-    public TelephonyMongo createTelephonyMongo(@RequestBody TelephonyDTO telephonyDTO) {
-        return telephonyMongoService.createTelephonyMongo(telephonyDTO);
+    public ResponseEntity<TelephonyMongo> createTelephonyMongo(@RequestBody TelephonyDTO telephonyDTO) {
+        TelephonyMongo createdTelephonyMongo = telephonyMongoService.createTelephonyMongo(telephonyDTO);
+        return ResponseEntity.ok(createdTelephonyMongo);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public ResponseEntity<TelephonyMongo> getTelephonyMongoById(@PathVariable String id) {
         return telephonyMongoService.findById(id)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
-    @GetMapping("/{phoneNumber}")
-    public ResponseEntity<TelephonyMongo> getTelephonyMongoByPhoneNUmber(@PathVariable String phoneNumber) {
+    @GetMapping("/phone/{phoneNumber}")
+    public ResponseEntity<TelephonyMongo> getTelephonyMongoByPhoneNumber(@PathVariable String phoneNumber) {
         return telephonyMongoService.findByPhoneNumber(phoneNumber)
                 .map(ResponseEntity::ok)
                 .orElse(ResponseEntity.notFound().build());
     }
 
-
     @GetMapping
-    public Page<TelephonyMongo> getAllTelephonyMongo(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size) {
-        return telephonyMongoService.findAllWithFilter(size, page);
+    public ResponseEntity<Page<TelephonyMongo>> getAllTelephonyMongo(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size) {
+        Page<TelephonyMongo> telephonyMongos = telephonyMongoService.findAllWithFilter(size, page);
+        return ResponseEntity.ok(telephonyMongos);
     }
 
     @PutMapping("/{id}")
@@ -54,7 +53,8 @@ public class TelephonyMongoController {
         return ResponseEntity.ok().build();
     }
 
-    @DeleteMapping("/byPhoneNumber")
+
+    @DeleteMapping("/phone")
     public ResponseEntity<Void> deleteByPhoneNumber(@RequestParam String phoneNumber) {
         telephonyMongoService.deleteByPhoneNumber(phoneNumber);
         return ResponseEntity.ok().build();

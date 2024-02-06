@@ -9,7 +9,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/v1/telephony")
+@RequestMapping("/api/v1/telephony-postgres")
 public class TelephonyController {
 
     @Autowired
