@@ -1,0 +1,272 @@
+{
+	"info": {
+		"_postman_id": "6e8b8ddb-ef72-422e-b9dc-f9bff1bfef71",
+		"name": "postgres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32777504"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/telephony-postgres/id/3",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"",
+							"pm.test(\"Response status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"",
+							"pm.test(\"Response Content-Type is application/json\", function () {",
+							"    pm.expect(pm.response.headers.get(\"Content-Type\")).to.include(\"application/json\");",
+							"});",
+							"",
+							"",
+							"pm.test(\"Creation date is in a valid date format\", function () {",
+							"    const responseData = pm.response.json();",
+							"    ",
+							"    pm.expect(responseData.content).to.be.an('array');",
+							"    responseData.content.forEach(function(item) {",
+							"        pm.expect(item.creationDate).to.match(/^\\d{4}-\\d{2}-\\d{2}$/);",
+							"    });",
+							"});",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "6",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/telephony-postgres/id/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"telephony-postgres",
+						"id",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/telephony-postgres/id/{{id}}?{{id}}=6",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/telephony-postgres/id/{{id}}?{{id}}=6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"telephony-postgres",
+						"id",
+						"{{id}}"
+					],
+					"query": [
+						{
+							"key": "{{id}}",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/telephony-postgres",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/telephony-postgres?page=1&size=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"telephony-postgres"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "size",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/telephony-postgres",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"birth_year\": \"1985-01-01\",\r\n    \"creation_date\": \"2022-02-05\",\r\n    \"name\": \"Ramazan Issayev\",\r\n    \"phone_number\": \"+11122334455\",\r\n    \"secondary_phone_number\": \"+9988776655\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/telephony-postgres",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"telephony-postgres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/telephony-postgres/12",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/telephony-postgres/+4455667788",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"telephony-postgres",
+						"+4455667788"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/telephony-postgres/2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"birth_year\": \"1985-02-02\",\r\n    \"creation_date\": \"2022-02-05\",\r\n    \"name\": \"John John\",\r\n    \"phone_number\": \"+11122334455\",\r\n    \"secondary_phone_number\": \"+9988776655\"\r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/telephony-postgres/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"telephony-postgres",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/telephony-postgres/phone/+3344556677",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"phone\":\"+1122334455\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/telephony-postgres/phone/+3344556677",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"telephony-postgres",
+						"phone",
+						"+3344556677"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
