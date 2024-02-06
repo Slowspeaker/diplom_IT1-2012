@@ -1,5 +1,6 @@
 package kz.greetgo.xnkqionsbdarpbwmocho.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Data;
 import lombok.Getter;
 import lombok.Setter;
@@ -14,13 +15,24 @@ import java.time.LocalDate;
 public class TelephonyMongo {
     @Id
     private String id;
-    private String name;
-    private LocalDate birthYear;
-    private String phoneNumber;
-    private String secondaryPhoneNumber;
-    private LocalDate creationDate;
 
-    public TelephonyMongo( String name, LocalDate birthYear, String phoneNumber, String secondaryPhoneNumber, LocalDate creationDate) {
+    @JsonProperty("name")
+    private String name;
+
+    @JsonProperty("birth_year")
+    private String birthYear;
+
+    @JsonProperty("phone_number")
+    private String phoneNumber;
+
+    @JsonProperty("secondary_phone_number")
+    private String secondaryPhoneNumber;
+
+    @JsonProperty("creation_date")
+    private String creationDate;
+
+
+    public TelephonyMongo( String name, String birthYear, String phoneNumber, String secondaryPhoneNumber, String creationDate) {
 
         this.name = name;
         this.birthYear = birthYear;

@@ -50,7 +50,7 @@ public class TelephonyMongoService {
 
     private void copyDtoToEntity(TelephonyDTO dto, TelephonyMongo entity) {
         entity.setName(dto.getName());
-        entity.setBirthYear(dto.getBirthYear());
+        entity.setBirthYear(String.valueOf(dto.getBirthYear()));
         entity.setPhoneNumber(dto.getPhoneNumber());
         entity.setSecondaryPhoneNumber(dto.getSecondaryPhoneNumber());
     }
