@@ -74,7 +74,6 @@ yarn.lock
 
 # Database files
 *.db
-*.sql
 *.jks
 *.p12
 
