@@ -1,6 +1,3 @@
-# xnkqionsbdarpbwmocho
-
-Тестовое задание для Junior Backend Developer (Java)
 
 # Оглавление
 (1) [Как скачать](#Как-скачать)
