@@ -14,7 +14,7 @@
 
 ## Как скачать 
 
-Чтобы скачать проект, вам нужно открыть командную строку. И прописать команду git clone https://github.com/Slowspeaker/xnkqionsbdarpbwmocho.
+Чтобы скачать проект, вам нужно открыть командную строку. И прописать команду git clone https://github.com/Slowspeaker/diplom_IT1-2012.
 
 #### Процесс запуска.
 При открытий проекта gradle сам забилдит нужные для него зависимости. Надо будет прописать `application.properties`.
